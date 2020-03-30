@@ -1,15 +1,14 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
-#include "snake.h"
+#include "shooter.h"
 
 class Controller {
  public:
-  void HandleInput(bool &running, Snake &snake) const;
+  void HandleInput(bool &running, Shooter &shooter) const;
 
  private:
-  void ChangeDirection(Snake &snake, Snake::Direction input,
-                       Snake::Direction opposite) const;
+  void ChangeDirection(Shooter &shooter, Direction input) const;
 };
 
 #endif
